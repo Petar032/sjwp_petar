@@ -1,0 +1,40 @@
+h1{
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+h2{
+    font-family: "Roboto", serif;
+    color: #4CAF50;
+}
+body{
+    background-color: #ECEFF1;
+}
+.p1{
+    font-size: 20px;
+    color: #78909C;
+}
+.p2{
+    font-size: 18px;
+    color: #546E7A;
+}
+.p3{
+    font-size: 16px;
+    color: #37474F;
+}
+.prvi{
+    list-style-type:square;
+}
+.drugi{
+    list-style-type:georgian;
+}
+.treci{
+    list-style-type:lower-greek;
+}
+.highlight{
+    color: #FFC107;
+}
+
+#main-title{
+    font-size: 4rem;
+}
