@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranzicije</title>
+    <style>
+        #main{
+            position: relative;
+            top: 200px;
+            left: 200px;
+        }
+        #div5 {
+            position: absolute;
+            top: 170px;
+            left: 170px;
+            font-size: 50px ;
+            z-index: -1;
+
+        }
+   #div1{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    transform-origin: top left; 
+    transition: rotate 1s ease-in-out;    
+   }
+   
+   #div2{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    position: absolute;
+    top: 200px;
+    transform-origin: top left; 
+    transition: rotate 1s ease-in-out;  
+   }
+   #div3{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+position: absolute;
+left: 200px;
+transform-origin: bottom right; 
+transition: rotate 1s ease-in-out;  
+   }
+   #div4{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    transform-origin: bottom right; 
+    transition: rotate 1s ease-in-out;  
+    
+   }
+   #main:hover #div1{
+    rotate: 90deg;
+   }
+   #main:hover #div2{
+    rotate: -90deg;
+   }
+   #main:hover #div3{
+    rotate: -90deg;
+   }
+   #main:hover #div4{
+    rotate: 90deg;
+   }
+   
+
+
+    </style>
+</head>  
+<body>
+    <div id="main">
+   <div id="div1"></div>
+   <div id="div2"></div> 
+   <div id="div3"></div>
+   <div id="div4"></div>
+   <div id="div5">Hi!</div>
+</div>
+</body>
+</html>
