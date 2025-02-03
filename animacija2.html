@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .div{
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        border: gold 5px solid;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-top: 5px solid white;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+        animation-play-state: running;
+    }
+    .box:hover{
+        animation-play-state: paused;
+    }
+    
+    @keyframes spin{
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<body>
+    <div class="div"></div>
+    
+</body>
+</html>

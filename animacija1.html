@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .div{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 5px solid aqua;
+        border-radius: 4px;
+        box-shadow: 0 0 9px aqua,0 0 9px aqua inset ;
+        animation-name: spin;
+        animation-duration: 2s;
+        animation-iteration-count: infinite   ;
+    }
+    @keyframes spin{
+        0%{
+            transform: rotateX(0) rotateY(0) rotateZ(0);
+        }
+        33%{
+            transform: rotateX(180deg) rotateY(0) rotateZ(0)
+        }
+        67%{
+            transform: rotateX(180deg) rotateY(180deg) rotateZ(0)
+        }
+        100%{
+            transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg)
+        }
+    }
+</style>
+<body>
+    <div class="div"></div>
+</body>
+</html>
