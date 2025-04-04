@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="4.Zadaća">
+    <meta name="author" content="Petar Lovaković">
+    <title>Zadaća 4</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 300px;
+            background-color: #C12E33;
+            position: relative;
+        }
+
+        .pillar {
+            position: absolute;
+            bottom: 0;
+            height: 150px;
+            width: 27px;
+            background-color: #323130;
+        }
+
+        .left-pillar {
+            left: 88px;
+        }
+        
+        .right-pillar {
+            left: 260px;
+        }
+
+        .diagonal {
+            position: absolute;
+            width: 120px;
+            height: 25px;
+            background-color: #323130;
+        }
+
+        .diagonal-left-top {
+            top: 40px;
+            left: 80px;
+            transform: rotate(45deg);
+        }
+
+        .diagonal-right-top {
+            top: 40px;
+            left: 180px;
+            transform: rotate(-45deg);
+        }
+
+        .diagonal-left-bottom {
+            top:110px;
+            left: 80px;
+            transform: rotate(-45deg);
+        }
+
+        .diagonal-right-bottom {
+            top: 110px;
+            left: 180px;
+            transform: rotate(45deg);
+        }
+
+    </style>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="pillar left-pillar"></div>
+        <div class="pillar right-pillar"></div>
+        <div class="diagonal diagonal-left-top"></div>
+        <div class="diagonal diagonal-right-top"></div>
+        <div class="diagonal diagonal-left-bottom"></div>
+        <div class="diagonal diagonal-right-bottom"></div>
+    </div>
+    </div>
+</body>
+</html>
