@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-dnevnik</title>
+    <style>
+         body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .e-dnevnik {
+            background-color: #0b3a5b;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            position: relative;
+        }
+        .boja{
+            width: 100px;
+            height: 3px;
+            background-image: linear-gradient(to right, lime, magenta, lightblue);
+            position: absolute;
+            border-radius: 10%;
+            top: 42px;
+            left: 10px;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 600px;
+        }
+
+        .naslov {
+            font-size: 24px;
+            margin: 20px;
+            position: absolute;
+            left: 450px;
+            top: 240px;
+        }
+        .podatci{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .labela {
+            width: 120px;
+            text-align: right;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .box {
+            width: 250px;
+            height: 30px;
+            padding: 5px 10px;
+            border: 1px solid #aaa;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        .podatci-dugme {
+            height: 40px;
+            background-color: #1f75c8;
+            color: white;
+            font-size: 14px;
+
+        }
+        .prijava-dugme {
+            margin: 20px;
+            width: 270px;
+            height: 40px;
+            border-radius: 3%;
+            background-color: #1f75c8;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            left: 390px;
+            top: 410px;
+            position: absolute;
+        }
+        .logo{
+            position: absolute;
+            left: 470px;
+            top: 850px;
+        }
+   
+    </style>
+</head>
+<body>
+    <div class="e-dnevnik">e-Dnevnik
+        <div class="boja"></div>
+    </div>
+    <div class="main">
+        <div class="naslov">Dobro došli</div>
+        <div class="podatci">
+            <div class="labela">Korisničko ime:</div>
+            <input class="box" type="text">
+        </div>
+        <div class="podatci">
+            <div class="labela">Lozinka:</div>
+            <input class="box" type="password">
+        </div>
+        <button class="prijava-dugme">PRIJAVA</button>
+    </div>
+    <div class="logo">
+        <img id="logo" src="./slika1.png" alt="carnet-slika">
+    </div>
+
+</body>
+</html>
