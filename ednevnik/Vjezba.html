@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vjezba</title>
-</head>
-<style>
- body {
+    <style>
+        body {
             margin: 0;
             padding: 20px;
             box-sizing: border-box;
-            
         }
         .container {
             display: grid;
@@ -18,17 +16,128 @@
             gap: 10px;
         }
         .grid {
-            background-color: #444;
-            color: white;
-            font-size: 2rem;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            font-size: 24px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;    
+            justify-content: start;
+
+        }
+        .container-a {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 10px; 
+        }
+        .grip {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            font-size: 24px;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100px;
             border-radius: 8px;
         }
-</style>
+        .a{
+            grid-column: 1 / 3;
+            
+        }
+        .b{
+            grid-row: span 2; 
+        }
+        .e{
+            grid-column: 1 / 3;
+        }
+        .grig{
+            background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    font-size: 24px;   
+        }
+        .container-b{
+            display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px; 
+        }
+        .a4{
+            grid-column: span 2;
+        }
+        .b4{
+            grid-column: span 2;
+        }
+        .d4{
+            grid-column: span 3;
+        }
+        .e4{
+            grid-column: span 4;
+        }
+        .container-c{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .a5{
+            grid-column: span 2;
+        }
+        .b5{
+            grid-row: span 2;
+        }
+        .c5{
+            grid-row: span 2;
+        }
+        .container-d{
+            display: grid;
+            gap: 10px ;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+        .a6{
+            grid-column:span 4;
+            background-color: darkgray;
+            font-size: medium;
+        }
+        .b6{
+            align-items: start;
+            font-size: medium;
+        }
+        .c6{
+            grid-column: span 3;
+            font-size: medium;
+        }
+        .d6{
+            background-color: lightgray;
+            grid-column: span 4;
+            font-size: medium;
+            color: black;
+        }
+        .e6{
+            background-color: darkgray;
+            grid-column: span 4;
+            font-size: medium;
+        }
+        .container-e{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .g{
+            background-color: lightgray;
+            color: black;
+        }
+    </style>
+</head>
 <body>
+
     <div class="container">
         <div class="grid">A</div>
         <div class="grid">B</div>
@@ -37,9 +146,9 @@
         <div class="grid">E</div>
         <div class="grid">F</div>
     </div>
-<br>
-<br>
 
+    <br>
+    <br>
 
     <div class="container">
         <div class="grid">D</div>
@@ -49,5 +158,62 @@
         <div class="grid">B</div>
         <div class="grid">C</div>
     </div>
+
+    <br>
+    <br>
+
+    <div class="container-a">
+        <div class=" grip a">A</div>
+        <div class=" grip b">B</div>
+        <div class=" grip">C</div>
+        <div class=" grip">D</div>
+    </div>
+    <br>
+    <br>
+    <div class="container-b">
+        <div class="grid a4">A</div>
+        <div class="grid b4">B</div>
+        <div class="grid c4">C</div>
+        <div class="grid d4">D</div>
+        <div class="grid e4">E</div>
+        
+    </div>
+    <br>
+    <br>
+    <div class="container-c">
+        <div class="grid a5">A</div>
+        <div class="grid b5">B</div>
+        <div class="grid c5">C</div>
+        <div class="grid d5">D</div>
+        <div class="grid e5">E</div>
+        
+    </div>
+    <br>
+    <br>
+    <div class="container-d">
+        <div class="grid a6">Header</div>
+        <div class="grid b6">Sidebar</div>
+        <div class="grid c6">Content <br>More content than we had before so <br>this column is now quite tall.</div>
+        <div class="grid d6">Sidebar 2</div>
+        <div class="grid e6">Footer</div>
+        
+    </div>
+    <br>
+    <br>
+    <div class="container-e">
+        <div class="grid">1</div>
+        <div class="grid g">2</div>
+        <div class="grid">3</div>
+        <div class="grid g">4</div>
+        <div class="grid">5</div>
+        <div class="grid g">6</div>
+        <div class="grid">7</div>
+        <div class="grid g">8</div>
+        <div class="grid">9</div>
+        <div class="grid g">10</div>
+        <div class="grid">11</div>
+        <div class="grid g">12</div>
+    </div>
+
 </body>
 </html>
